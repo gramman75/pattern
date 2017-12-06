@@ -17,8 +17,8 @@ public class BookShelfArrayList implements Aggregate {
         this.books.add(book);
     }
 
-    public BookShelfArrayListIterator iterator(){
-        return new BookShelfArrayListIterator(this);
+    public BookShelfIterator iterator(){
+        return new BookShelfIterator(this);
     }
 
 }

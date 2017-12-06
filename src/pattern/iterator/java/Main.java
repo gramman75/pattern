@@ -2,7 +2,7 @@ package pattern.iterator.java;
 
 public class Main {
     public static void main(String[] args) {
-        BookShelfArrayList bookShelf = new BookShelfArrayList();
+        Aggregate bookShelf = new BookShelfArrayList();
 
         bookShelf.appendBook(new Book("A"));
         bookShelf.appendBook(new Book("B"));

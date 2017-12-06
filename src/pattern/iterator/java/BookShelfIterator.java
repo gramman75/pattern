@@ -2,9 +2,9 @@ package pattern.iterator.java;
 
 public class BookShelfIterator implements Iterator {
     private int index;
-    private BookShelf bookShelf;
+    private Aggregate bookShelf;
 
-    public BookShelfIterator( BookShelf bookShelf){
+    public BookShelfIterator( Aggregate bookShelf){
         this.index = 0;
         this.bookShelf = bookShelf;
     }
