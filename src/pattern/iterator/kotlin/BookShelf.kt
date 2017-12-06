@@ -4,7 +4,7 @@ import java.lang.reflect.Array
 
 class BookShelf(maxLength: Int): Aggregate{
     var last: Int = 0
-    var books: Array<Book>
+    var books = Array<Book>(maxLength, { Book("KIM") })
 
 
     open fun getBookAt(index: Int): Book{
