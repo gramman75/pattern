@@ -4,7 +4,7 @@ class Main {
     companion object {
         @JvmStatic
         fun main(args: Array<String>){
-            val factory = Factory.getFactory("ListFactory")
+            val factory = Factory.getFactory("pattern.abstractFactory.listFactory.kotlin.ListFactory")
             if (factory != null){
                 val daum = factory.createLink("Daum", "http://www.daun.net")
                 val naver = factory.createLink("Naver", "http://www.naver.com")
@@ -20,6 +20,8 @@ class Main {
                 news.add(hani)
 
                 var page = factory.createPage("Link Site", "gramman75")
+                page.add(portal)
+                page.add(news)
                 page.output()
             }
         }
