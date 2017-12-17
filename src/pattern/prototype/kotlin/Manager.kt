@@ -7,7 +7,7 @@ class Manager{
         showcase.put(name, pro)
     }
 
-    fun create(name: String): Product {
-
-    }
+//    fun create(name: String): Product {
+//
+//    }
 }
