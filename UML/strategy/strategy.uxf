@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1470</x>
+      <y>560</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>HTMLBuilder
+--
+filename
+writer
+--
+makeTitle
+makeString
+makeItem
+close
+getResult</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1300</x>
+      <y>210</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>/Builder/
+--
+--
+/makeTitle/
+/makeString/
+/makeItem/
+/close/</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1130</x>
+      <y>560</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>TextBuilder
+--
+buffer
+--
+makeTitle
+makeString
+makeItem
+close
+getResult</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1230</x>
+      <y>390</y>
+      <w>190</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>170.0;10.0;170.0;100.0;10.0;100.0;10.0;170.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1390</x>
+      <y>390</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0;190.0;100.0;190.0;170.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1140</x>
+      <y>290</y>
+      <w>180</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-&gt;</panel_attributes>
+    <additional_attributes>10.0;160.0;160.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>30</x>
+      <y>50</y>
+      <w>270</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>Hand
+--
+_+HANDVALUE_ROCK: Int = 0_
+_+HANDVALUE_SCISSOR: Int = 1_
+_+HANDVALUE_PAPER: Int = 2_
+_+Hand: Array&lt;Hand&gt;_
+-handValue: Int
+_name: Array&lt;String&gt;_
+--
++Hand(Int)
++getHand(Int): Hand
++isStrongerThan(Hand): boolean
++isWeakerThan(Hand): boolean
++fight(Hand): int
++toString(): String
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>80</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+/Strategy/
+--
+/+nextHand(): Hand/
+/+study(boolean): void/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>620</x>
+      <y>390</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>ProbStrategy
+--
+-prevHandValue: Int
+-currentHandValue: Int
+-rand: Random
+-history: Array&lt;int&gt;(3,3)
+--
+-getSum(Int): Int
++nextHand(): Hand
++study(boolean) void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>290</x>
+      <y>390</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>WinngingStrategy
+--
+-prevHand: Hand
+-rand: Random
+-won: boolean
+--
++nextHand(): Hand
++study(boolean) void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>390</x>
+      <y>260</y>
+      <w>180</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>160.0;10.0;160.0;100.0;10.0;100.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>260</y>
+      <w>200</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0;180.0;100.0;180.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>780</x>
+      <y>80</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Player
+--
+strategy
+-winCount
+-loseCount
+-evenCount
+-gameCount
+--
++nextHand(): Hand
++win
++lose
++even</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
