@@ -9,9 +9,9 @@ class Main {
 
             manager.register("Pen", product1)
 
-            val pen1 = manager.create("Pen")
+//            val pen1 = manager.create("Pen")
 
-            pen1?.use("Hello")
+//            pen1?.use("Hello")
 
         }
     }
