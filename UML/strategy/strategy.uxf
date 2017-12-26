@@ -4,97 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1470</x>
-      <y>560</y>
-      <w>210</w>
-      <h>190</h>
-    </coordinates>
-    <panel_attributes>HTMLBuilder
---
-filename
-writer
---
-makeTitle
-makeString
-makeItem
-close
-getResult</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>1300</x>
-      <y>210</y>
-      <w>210</w>
-      <h>190</h>
-    </coordinates>
-    <panel_attributes>/Builder/
---
---
-/makeTitle/
-/makeString/
-/makeItem/
-/close/</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>1130</x>
-      <y>560</y>
-      <w>210</w>
-      <h>190</h>
-    </coordinates>
-    <panel_attributes>TextBuilder
---
-buffer
---
-makeTitle
-makeString
-makeItem
-close
-getResult</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>1230</x>
-      <y>390</y>
-      <w>190</w>
-      <h>190</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>170.0;10.0;170.0;100.0;10.0;100.0;10.0;170.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>1390</x>
-      <y>390</y>
-      <w>210</w>
-      <h>190</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;100.0;190.0;100.0;190.0;170.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>1140</x>
-      <y>290</y>
-      <w>180</w>
-      <h>180</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;&lt;-&gt;</panel_attributes>
-    <additional_attributes>10.0;160.0;160.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>30</x>
-      <y>50</y>
+      <x>60</x>
+      <y>80</y>
       <w>270</w>
       <h>240</h>
     </coordinates>
@@ -103,7 +14,7 @@ getResult</panel_attributes>
 _+HANDVALUE_ROCK: Int = 0_
 _+HANDVALUE_SCISSOR: Int = 1_
 _+HANDVALUE_PAPER: Int = 2_
-_+Hand: Array&lt;Hand&gt;_
+_+hand: Array&lt;Hand&gt;_
 -handValue: Int
 _name: Array&lt;String&gt;_
 --
@@ -121,7 +32,7 @@ _name: Array&lt;String&gt;_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>450</x>
+      <x>480</x>
       <y>80</y>
       <w>210</w>
       <h>190</h>
@@ -137,7 +48,7 @@ _name: Array&lt;String&gt;_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>620</x>
+      <x>610</x>
       <y>390</y>
       <w>210</w>
       <h>190</h>
@@ -157,7 +68,7 @@ _name: Array&lt;String&gt;_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>290</x>
+      <x>350</x>
       <y>390</y>
       <w>210</w>
       <h>190</h>
@@ -175,45 +86,57 @@ _name: Array&lt;String&gt;_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>390</x>
+      <x>450</x>
       <y>260</y>
-      <w>180</w>
+      <w>150</w>
       <h>150</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>160.0;10.0;160.0;100.0;10.0;100.0;10.0;130.0</additional_attributes>
+    <additional_attributes>130.0;10.0;130.0;100.0;10.0;100.0;10.0;130.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>540</x>
+      <x>570</x>
       <y>260</y>
-      <w>200</w>
+      <w>160</w>
       <h>150</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;100.0;180.0;100.0;180.0;130.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0;140.0;100.0;140.0;130.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>780</x>
+      <x>810</x>
       <y>80</y>
       <w>210</w>
-      <h>190</h>
+      <h>200</h>
     </coordinates>
     <panel_attributes>Player
 --
-strategy
+-strategy
 -winCount
 -loseCount
 -evenCount
 -gameCount
+-name
 --
 +nextHand(): Hand
-+win
-+lose
-+even</panel_attributes>
++win()
++lose()
++even()</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>680</x>
+      <y>160</y>
+      <w>150</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-&gt;</panel_attributes>
+    <additional_attributes>130.0;10.0;10.0;10.0</additional_attributes>
   </element>
 </diagram>

@@ -21,7 +21,7 @@ public class Hand {
         this.handValue = handValue;
     }
 
-    public Hand getHand(int handValue){
+    public static Hand getHand(int handValue){
         return hand[handValue];
     }
 
