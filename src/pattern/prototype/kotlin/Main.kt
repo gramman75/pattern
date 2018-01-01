@@ -7,11 +7,11 @@ class Main {
             val product1 = UnderlinePen('_')
             val manager = Manager()
 
-            manager.register("Pen", product1)
+//            manager.register("Pen", product1)
+//
+//            val pen1 = manager.create("Pen")
 
-            val pen1 = manager.create("Pen")
-
-            pen1?.use("Hello")
+//            pen1?.use("Hello")
 
         }
     }
